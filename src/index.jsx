@@ -151,6 +151,7 @@ module.exports = React.createClass({
 
             var inputStyle = assign({}, props.inputStyle)
             var labelStyle = assign({}, props.labelStyle)
+            var disabled = item.disabled
             var checked
             var value
             var children
@@ -186,6 +187,7 @@ module.exports = React.createClass({
                 value   : value,
                 name    : props.name,
                 type    : 'radio',
+                disabled: disabled,
                 style   : inputStyle,
                 onChange: emptyFn
             }

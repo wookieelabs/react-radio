@@ -105,7 +105,7 @@ var COLOR = 'red'
         var items = ['green', 'blue', 'red']
     ```
 
-    If an array item is an object, besides `value` and `label`, it can also have a `style` property and a `checkedStyle` property.
+    If an array item is an object, besides `value`, `label`, and `children`, it can also have a `style` property,a `checkedStyle` property, and a `disabled` property.
 
     ```js
     var items = [
@@ -113,6 +113,7 @@ var COLOR = 'red'
         {
             label: 'Blue',
             value: 'blue',
+            disabled: true,
             style: { color: 'blue'},
             checkedStyle: { color: 'blue', background: 'red'}
         }
