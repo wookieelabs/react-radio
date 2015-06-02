@@ -151,7 +151,7 @@ module.exports = React.createClass({
 
             var inputStyle = assign({}, props.inputStyle)
             var labelStyle = assign({}, props.labelStyle)
-            var disabled = item.disabled
+            var disabled = false
             var checked
             var value
             var children
@@ -164,6 +164,7 @@ module.exports = React.createClass({
                 value    = item.value
                 children = item.label || item.value || item.children
                 checked  = checkedValue == value
+                disabled = item.disabled
 
                 if (item.inputStyle){
                     assign(inputStyle, item.inputStyle)
